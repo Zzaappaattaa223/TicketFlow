@@ -1,0 +1,1658 @@
+{
+  "venues": [
+    {
+      "id": "venue_colon",
+      "nombre": "Teatro Colón",
+      "slug": "teatro-colon",
+      "ciudad": "Buenos Aires",
+      "capacidad": 2400,
+      "imagen": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&q=80&w=1000",
+      "zonas": [
+        {
+          "id": "venue_colon_platea_premium",
+          "nombre": "Platea Premium",
+          "capacidad": 400,
+          "precio": 15000,
+          "tipo": "VIP"
+        },
+        {
+          "id": "venue_colon_platea_alta",
+          "nombre": "Platea Alta",
+          "capacidad": 600,
+          "precio": 9500,
+          "tipo": "General"
+        },
+        {
+          "id": "venue_colon_palcos",
+          "nombre": "Palcos",
+          "capacidad": 400,
+          "precio": 18000,
+          "tipo": "VIP"
+        },
+        {
+          "id": "venue_colon_tertulia",
+          "nombre": "Tertulia",
+          "capacidad": 1000,
+          "precio": 4500,
+          "tipo": "Descuento"
+        }
+      ]
+    },
+    {
+      "id": "venue_rex",
+      "nombre": "Teatro Gran Rex",
+      "slug": "teatro-gran-rex",
+      "ciudad": "Buenos Aires",
+      "capacidad": 3200,
+      "imagen": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80&w=1000",
+      "zonas": [
+        {
+          "id": "venue_rex_vip_platinum",
+          "nombre": "VIP Platinum",
+          "capacidad": 500,
+          "precio": 25000,
+          "tipo": "VIP"
+        },
+        {
+          "id": "venue_rex_platea_gold",
+          "nombre": "Platea Gold",
+          "capacidad": 1000,
+          "precio": 18000,
+          "tipo": "General"
+        },
+        {
+          "id": "venue_rex_super_pullman",
+          "nombre": "Super Pullman",
+          "capacidad": 700,
+          "precio": 12000,
+          "tipo": "General"
+        },
+        {
+          "id": "venue_rex_pullman",
+          "nombre": "Pullman",
+          "capacidad": 1000,
+          "precio": 8000,
+          "tipo": "Descuento"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "event_cisnes",
+      "venueId": "venue_colon",
+      "título": "El Lago de los Cisnes",
+      "descripción": "El prestigioso Ballet Estable del Teatro Colón presenta la obra cumbre del ballet clásico, musicalizada por la partitura inolvidable de Pyotr Ilyich Tchaikovsky y dirigida por destacados coreógrafos internacionales.",
+      "fechas": [
+        "2026-06-13T05:19:20.805Z",
+        "2026-06-20T05:19:21.235Z"
+      ],
+      "imágenes": [
+        "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&q=80&w=1000"
+      ],
+      "categoría": "danza",
+      "estado": "publicado",
+      "modo": "numerado",
+      "cargoServicio": 10,
+      "tipoCargo": "porcentaje",
+      "createdAt": "2026-06-08T05:19:21.237Z"
+    },
+    {
+      "id": "event_soda",
+      "venueId": "venue_rex",
+      "título": "Soda Stereo: Tributo Sinfónico",
+      "descripción": "Un recorrido emocionante por las canciones más icónicas de la banda más grande de Latinoamérica, interpretadas por una orquesta filarmónica de 60 músicos y destacados cantantes de la escena rockera.",
+      "fechas": [
+        "2026-06-28T05:19:21.235Z"
+      ],
+      "imágenes": [
+        "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=1000"
+      ],
+      "categoría": "concierto",
+      "estado": "publicado",
+      "modo": "libre",
+      "cargoServicio": 1500,
+      "tipoCargo": "fijo",
+      "createdAt": "2026-06-08T05:19:21.237Z"
+    }
+  ],
+  "zones": {
+    "event_cisnes": [
+      {
+        "id": "zone_cisnes_platea_premium",
+        "nombre": "Platea Premium",
+        "capacidad": 400,
+        "capacidadRestante": 400,
+        "precio": 15000,
+        "tipo": "VIP"
+      },
+      {
+        "id": "zone_cisnes_platea_alta",
+        "nombre": "Platea Alta",
+        "capacidad": 600,
+        "capacidadRestante": 600,
+        "precio": 9500,
+        "tipo": "General"
+      },
+      {
+        "id": "zone_cisnes_palcos",
+        "nombre": "Palcos",
+        "capacidad": 400,
+        "capacidadRestante": 400,
+        "precio": 18000,
+        "tipo": "VIP"
+      },
+      {
+        "id": "zone_cisnes_tertulia",
+        "nombre": "Tertulia",
+        "capacidad": 1000,
+        "capacidadRestante": 1000,
+        "precio": 4500,
+        "tipo": "Descuento"
+      }
+    ],
+    "event_soda": [
+      {
+        "id": "zone_soda_vip_platinum",
+        "nombre": "VIP Platinum",
+        "capacidad": 500,
+        "capacidadRestante": 500,
+        "precio": 25000,
+        "tipo": "VIP"
+      },
+      {
+        "id": "zone_soda_platea_gold",
+        "nombre": "Platea Gold",
+        "capacidad": 1000,
+        "capacidadRestante": 1000,
+        "precio": 18000,
+        "tipo": "General"
+      },
+      {
+        "id": "zone_soda_super_pullman",
+        "nombre": "Super Pullman",
+        "capacidad": 700,
+        "capacidadRestante": 700,
+        "precio": 12000,
+        "tipo": "General"
+      },
+      {
+        "id": "zone_soda_pullman",
+        "nombre": "Pullman",
+        "capacidad": 1000,
+        "capacidadRestante": 1000,
+        "precio": 8000,
+        "tipo": "Descuento"
+      }
+    ]
+  },
+  "seats": [
+    {
+      "id": "seat_cisnes_2026-06-13_A_1",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "A",
+      "número": 1,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_A_2",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "A",
+      "número": 2,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_A_3",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "A",
+      "número": 3,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_A_4",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "A",
+      "número": 4,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_A_5",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "A",
+      "número": 5,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_A_6",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "A",
+      "número": 6,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_A_7",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "A",
+      "número": 7,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_A_8",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "A",
+      "número": 8,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_B_1",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "B",
+      "número": 1,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_B_2",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "B",
+      "número": 2,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_B_3",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "B",
+      "número": 3,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_B_4",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "B",
+      "número": 4,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_B_5",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "B",
+      "número": 5,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_B_6",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "B",
+      "número": 6,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_B_7",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "B",
+      "número": 7,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_B_8",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "B",
+      "número": 8,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_C_1",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "C",
+      "número": 1,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_C_2",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "C",
+      "número": 2,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_C_3",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "C",
+      "número": 3,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_C_4",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "C",
+      "número": 4,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_C_5",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "C",
+      "número": 5,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_C_6",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "C",
+      "número": 6,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_C_7",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "C",
+      "número": 7,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_C_8",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "C",
+      "número": 8,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_D_1",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "D",
+      "número": 1,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_D_2",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "D",
+      "número": 2,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_D_3",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "D",
+      "número": 3,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_D_4",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "D",
+      "número": 4,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_D_5",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "D",
+      "número": 5,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_D_6",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "D",
+      "número": 6,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_D_7",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "D",
+      "número": 7,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_D_8",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "D",
+      "número": 8,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_E_1",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "E",
+      "número": 1,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_E_2",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "E",
+      "número": 2,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_E_3",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "E",
+      "número": 3,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_E_4",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "E",
+      "número": 4,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_E_5",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "E",
+      "número": 5,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_E_6",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "E",
+      "número": 6,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_E_7",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "E",
+      "número": 7,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_E_8",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "E",
+      "número": 8,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_F_1",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "F",
+      "número": 1,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_F_2",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "F",
+      "número": 2,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_F_3",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "F",
+      "número": 3,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_F_4",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "F",
+      "número": 4,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_F_5",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "F",
+      "número": 5,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_F_6",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "F",
+      "número": 6,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_F_7",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "F",
+      "número": 7,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_F_8",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "F",
+      "número": 8,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_G_1",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "G",
+      "número": 1,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_G_2",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "G",
+      "número": 2,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_G_3",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "G",
+      "número": 3,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_G_4",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "G",
+      "número": 4,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_G_5",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "G",
+      "número": 5,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_G_6",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "G",
+      "número": 6,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_G_7",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "G",
+      "número": 7,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_G_8",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "G",
+      "número": 8,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_H_1",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "H",
+      "número": 1,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_H_2",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "H",
+      "número": 2,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_H_3",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "H",
+      "número": 3,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_H_4",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "H",
+      "número": 4,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_H_5",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "H",
+      "número": 5,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_H_6",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "H",
+      "número": 6,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_H_7",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "H",
+      "número": 7,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-13_H_8",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-13T05:19:20.805Z",
+      "fila": "H",
+      "número": 8,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_A_1",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "A",
+      "número": 1,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_A_2",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "A",
+      "número": 2,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_A_3",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "A",
+      "número": 3,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_A_4",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "A",
+      "número": 4,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_A_5",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "A",
+      "número": 5,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_A_6",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "A",
+      "número": 6,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_A_7",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "A",
+      "número": 7,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_A_8",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "A",
+      "número": 8,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_B_1",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "B",
+      "número": 1,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_B_2",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "B",
+      "número": 2,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_B_3",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "B",
+      "número": 3,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_B_4",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "B",
+      "número": 4,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_B_5",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "B",
+      "número": 5,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_B_6",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "B",
+      "número": 6,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_B_7",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "B",
+      "número": 7,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_B_8",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "B",
+      "número": 8,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_C_1",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "C",
+      "número": 1,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_C_2",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "C",
+      "número": 2,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_C_3",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "C",
+      "número": 3,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_C_4",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "C",
+      "número": 4,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_C_5",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "C",
+      "número": 5,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_C_6",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "C",
+      "número": 6,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_C_7",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "C",
+      "número": 7,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_C_8",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "C",
+      "número": 8,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_D_1",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "D",
+      "número": 1,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_D_2",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "D",
+      "número": 2,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_D_3",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "D",
+      "número": 3,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_D_4",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "D",
+      "número": 4,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_D_5",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "D",
+      "número": 5,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_D_6",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "D",
+      "número": 6,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_D_7",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "D",
+      "número": 7,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_D_8",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "D",
+      "número": 8,
+      "zona": "Platea Premium",
+      "estado": "libre",
+      "precio": 15000,
+      "tipo": "VIP"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_E_1",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "E",
+      "número": 1,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_E_2",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "E",
+      "número": 2,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_E_3",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "E",
+      "número": 3,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_E_4",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "E",
+      "número": 4,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_E_5",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "E",
+      "número": 5,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_E_6",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "E",
+      "número": 6,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_E_7",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "E",
+      "número": 7,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_E_8",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "E",
+      "número": 8,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_F_1",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "F",
+      "número": 1,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_F_2",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "F",
+      "número": 2,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_F_3",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "F",
+      "número": 3,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_F_4",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "F",
+      "número": 4,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_F_5",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "F",
+      "número": 5,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_F_6",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "F",
+      "número": 6,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_F_7",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "F",
+      "número": 7,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_F_8",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "F",
+      "número": 8,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_G_1",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "G",
+      "número": 1,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_G_2",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "G",
+      "número": 2,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_G_3",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "G",
+      "número": 3,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_G_4",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "G",
+      "número": 4,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_G_5",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "G",
+      "número": 5,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_G_6",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "G",
+      "número": 6,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_G_7",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "G",
+      "número": 7,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_G_8",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "G",
+      "número": 8,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_H_1",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "H",
+      "número": 1,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_H_2",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "H",
+      "número": 2,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_H_3",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "H",
+      "número": 3,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_H_4",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "H",
+      "número": 4,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_H_5",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "H",
+      "número": 5,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_H_6",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "H",
+      "número": 6,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_H_7",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "H",
+      "número": 7,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    },
+    {
+      "id": "seat_cisnes_2026-06-20_H_8",
+      "eventId": "event_cisnes",
+      "funcionFecha": "2026-06-20T05:19:21.235Z",
+      "fila": "H",
+      "número": 8,
+      "zona": "Platea Alta",
+      "estado": "libre",
+      "precio": 9500,
+      "tipo": "General"
+    }
+  ],
+  "orders": [],
+  "tickets": [],
+  "users": [
+    {
+      "id": "user_admin",
+      "email": "admin@ticketflow.com",
+      "nombre": "Administrador Principal",
+      "rol": "Super Admin",
+      "createdAt": "2026-06-08T05:19:21.238Z"
+    },
+    {
+      "id": "user_portero",
+      "email": "portero@ticketflow.com",
+      "nombre": "Controlador Acceso Rex",
+      "rol": "Controlador de Acceso",
+      "venueIds": [
+        "venue_rex"
+      ],
+      "createdAt": "2026-06-08T05:19:21.238Z"
+    },
+    {
+      "id": "user_staff",
+      "email": "staff@ticketflow.com",
+      "nombre": "Staff Multitarea",
+      "rol": "Comprador",
+      "roleAssignments": [
+        {
+          "id": "assign_1",
+          "rol": "Admin de Sala",
+          "venueId": "venue_colon"
+        },
+        {
+          "id": "assign_2",
+          "rol": "Boletería",
+          "venueId": "venue_rex"
+        },
+        {
+          "id": "assign_3",
+          "rol": "Productor",
+          "eventId": "event_soda"
+        },
+        {
+          "id": "assign_4",
+          "rol": "Controlador de Acceso",
+          "eventId": "event_cisnes",
+          "fecha": "2026-06-13T05:19:20.805Z"
+        }
+      ],
+      "createdAt": "2026-06-08T05:19:21.238Z"
+    },
+    {
+      "id": "user_1780895961263_skbuijbs4",
+      "email": "cliente.nuevo@ticketflow.com",
+      "nombre": "Cliente Nuevo",
+      "rol": "Comprador",
+      "createdAt": "2026-06-08T05:19:21.263Z"
+    }
+  ],
+  "locks": []
+}

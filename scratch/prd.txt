@@ -1,0 +1,104 @@
+<USER_REQUEST>
+
+
+
+PRODUCT REQUIREMENTS DOCUMENT
+TicketFlow
+Plataforma de reserva y venta de entradas para espectáculos
+
+
+
+Versión
+1.0 — Borrador inicial
+Fecha
+Mayo 2026
+Plataforma de desarrollo
+Google Antigravity IDE + Firebase
+Stack recomendado
+Next.js 15 · TypeScript · Firestore · Firebase Auth · Stripe
+Estado
+En refinamiento
+
+
+
+Este documento es el resultado de una sesión de refinamiento iterativo. Define el alcance, arquitectura, módulos funcionales y criterios de aceptación para la construcción de TicketFlow en Google Antigravity IDE.
+
+
+
+
+1. Visión general del producto
+
+
+1.1 Propósito
+TicketFlow es una plataforma web fullstack de nivel profesional para la venta y reserva de entradas a espectáculos en vivo. Cubre el ciclo completo: desde la publicación del evento por parte del productor hasta el ingreso del espectador al venue con validación por QR.
+La plataforma está orientada a venues de escala mediana (500 a 3.000 butacas) y soporta una amplia variedad de géneros: teatro, danza, conciertos, stand-up, cine, conferencias y talleres.
+
+1.2 Objetivos de negocio
+Digitalizar y centralizar la venta y gestión de entradas para múltiples venues.
+Ofrecer una experiencia de compra de nivel premium, comparable a Ticketmaster o StubHub pero adaptada a la escala mediana latinoamericana.
+Reducir la fricción en boletería física mediante validación digital en puerta.
+Proporcionar al productor datos en tiempo real sobre ventas, ocupación e ingresos.
+Soportar tanto eventos con asignación de butaca individual como eventos sin numeración (standing, zonas libres).
+
+1.3 Usuarios del sistema
+Rol
+Módulo principal
+Descripción
+Super Admin
+Panel admin
+Control total de la plataforma, venues y usuarios
+Productor / Promotor
+Panel admin
+Crea y gestiona sus propios eventos y configuraciones
+Boletería
+Panel admin
+Venta presencial, asignación manual de entradas
+Portero / Scanner
+App mobile
+Valida QR en la puerta del evento, solo lectura
+Comprador registra
+<truncated 19452 bytes>
+ secretas en el cliente. Todo pago pasa por Firebase Function del lado servidor.
+Firestore Security Rules deben cubrir todos los escenarios de roles antes de hacer deploy.
+Cada Firebase Function de pago debe ser idempotente para resistir reintentos del webhook de Stripe.
+
+Referencia de arquitectura: AI Studio → Antigravity → Firebase es el flujo canónico recomendado por Google I/O 2026. Firebase actúa como backend agent-native: Firestore para datos, Auth para identidad, Functions para lógica, App Hosting para el deploy del frontend Next.js.
+
+
+
+Apéndice: Glosario
+
+
+Término
+Definición
+Seat lock
+Reserva temporal de butaca (10 min) durante el proceso de compra para evitar doble venta
+Modo numerado
+Cada butaca tiene fila y número asignado. El comprador elige su lugar exacto en el mapa.
+Modo libre
+El comprador elige cantidad de entradas por zona. No hay asignación de butaca individual.
+QR único
+Código QR generado por Firebase Function, firmado con hash único, asociado a un solo ticket.
+Cortesía
+Entrada sin cargo, generada por el admin para prensa, invitados o patrocinadores.
+Abono
+Pack de entradas para múltiples funciones de la misma temporada, vendido a precio especial.
+Portero / Scanner
+Rol de solo lectura que valida QR en la puerta. Accede solo a la vista /scanner.
+Service fee
+Cargo adicional sobre el precio de la entrada, configurable por evento.
+Antigravity
+IDE agent-first de Google (basado en adquisición de Windsurf) para desarrollo fullstack autónomo.
+
+
+
+— Fin del documento —
+TicketFlow PRD v1.0  ·  Mayo 2026  ·  Desarrollado en Google Antigravity IDE
+
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-06-07T01:33:52-03:00.
+</ADDITIONAL_METADATA>
+<USER_SETTINGS_CHANGE>
+The user changed setting `Model Selection` from None to Gemini 3.5 Flash (Medium). No need to comment on this change if the user doesn't ask about it. If reporting what model you are, please use a human readable name instead of the exact string.
+</USER_SETTINGS_CHANGE>
