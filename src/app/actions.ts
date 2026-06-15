@@ -8,7 +8,7 @@ import { mercadoPagoService } from '@/lib/payments';
 import { notificationService } from '@/lib/notifications';
 import { getTicketEmailTemplate } from '@/lib/notifications/emailTemplates';
 import { z } from 'zod';
-import { cookies } from 'next/headers';
+import { cookies, headers } from 'next/headers';
 
 const imageSchema = z.string().refine((val) => {
   return val.startsWith('http://') || val.startsWith('https://') || val.startsWith('data:image/');
@@ -529,11 +529,17 @@ export async function createMercadoPagoPreferenceAction(
     const title = `Entradas: ${event.título}`;
     const unitPrice = Math.round(order.total / quantity);
 
+    const headersList = await headers();
+    const host = headersList.get('host') || 'localhost:3000';
+    const protocol = host.startsWith('localhost') || host.startsWith('127.0.0.1') ? 'http' : 'https';
+    const dynamicBaseUrl = `${protocol}://${host}`;
+
     const { initPoint } = await mercadoPagoService.createPreference(
       title,
       unitPrice,
       quantity,
-      orderId
+      orderId,
+      dynamicBaseUrl
     );
 
     return { success: true, initPoint };

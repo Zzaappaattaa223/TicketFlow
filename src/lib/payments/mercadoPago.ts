@@ -5,20 +5,21 @@ export class MercadoPagoService {
     title: string,
     unitPrice: number,
     quantity: number,
-    orderId: string
+    orderId: string,
+    baseUrl?: string
   ): Promise<{ initPoint: string; id: string }> {
+    const activeBaseUrl = baseUrl || process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+
     if (!this.accessToken) {
       console.warn('MERCADOPAGO_ACCESS_TOKEN no provisto. Usando simulador de Mercado Pago.');
       const id = `pref_mock_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
       return {
-        initPoint: `${baseUrl}/confirmation/${orderId}?collection_status=approved&collection_id=mp_mock_123&payment_id=mp_mock_123&status=approved&payment_type=credit_card&merchant_order_id=mp_mock_456&preference_id=${id}&site_id=MLA&processing_mode=aggregator&merchant_account_id=null`,
+        initPoint: `${activeBaseUrl}/confirmation/${orderId}?collection_status=approved&collection_id=mp_mock_123&payment_id=mp_mock_123&status=approved&payment_type=credit_card&merchant_order_id=mp_mock_456&preference_id=${id}&site_id=MLA&processing_mode=aggregator&merchant_account_id=null`,
         id
       };
     }
 
     try {
-      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
       const response = await fetch('https://api.mercadopago.com/v1/checkout/preferences', {
         method: 'POST',
         headers: {
@@ -35,9 +36,9 @@ export class MercadoPagoService {
             }
           ],
           back_urls: {
-            success: `${baseUrl}/confirmation/${orderId}`,
-            failure: `${baseUrl}/checkout?payment_error=true`,
-            pending: `${baseUrl}/confirmation/${orderId}?payment_status=pending`
+            success: `${activeBaseUrl}/confirmation/${orderId}`,
+            failure: `${activeBaseUrl}/checkout?payment_error=true`,
+            pending: `${activeBaseUrl}/confirmation/${orderId}?payment_status=pending`
           },
           auto_return: 'approved',
           external_reference: orderId
